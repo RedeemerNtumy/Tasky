@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tasky/widgets/tasks_lists.dart';
 
 class TaskScreen extends StatelessWidget {
   @override
@@ -6,7 +7,9 @@ class TaskScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          
+        },
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add),
       ),
@@ -43,6 +46,8 @@ class TaskScreen extends StatelessWidget {
           ),
           Expanded(
             child: Container(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: TaskList(),
               width: double.infinity,
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -56,3 +61,6 @@ class TaskScreen extends StatelessWidget {
     );
   }
 }
+
+
+
