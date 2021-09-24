@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:tasky/widgets/tasks_lists.dart';
+import 'package:tasky/screens/add_tasks_screen.dart';
 
 class TaskScreen extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          
+          showModalBottomSheet(context: context, builder: (context)=>AddTask());
         },
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add),
@@ -61,6 +63,3 @@ class TaskScreen extends StatelessWidget {
     );
   }
 }
-
-
-
