@@ -4,8 +4,14 @@ class TaskScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightBlue,
+      backgroundColor: Colors.lightBlueAccent,
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.lightBlueAccent,
+        child: Icon(Icons.add),
+      ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             padding: EdgeInsets.only(top: 60, left: 30, right: 30, bottom: 30),
@@ -13,7 +19,8 @@ class TaskScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 CircleAvatar(
-                  child: Icon(Icons.list, size: 30, color: Colors.lightBlue),
+                  child:
+                      Icon(Icons.list, size: 30, color: Colors.lightBlueAccent),
                   backgroundColor: Colors.white,
                   radius: 30,
                 ),
