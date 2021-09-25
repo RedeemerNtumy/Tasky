@@ -10,17 +10,34 @@ class AddTask extends StatelessWidget {
           width: double.infinity,
           child: Column(
             children: [
+              SizedBox(
+                height: 30,
+              ),
               Text(
                 "Add Task",
                 style: TextStyle(
                   color: Colors.lightBlueAccent,
-                  fontSize: 50,
+                  fontSize: 45,
+                  fontWeight: FontWeight.w500,
                 ),
               ),
-              TextField(),
+              TextField(
+                  decoration: InputDecoration(
+                hintText: "Add a new task",
+                hintStyle: TextStyle(fontSize: 20),
+              )),
+              SizedBox(
+                height: 15,
+              ),
               TextButton(
                 onPressed: null,
-                child: Text("Add Task"),
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.lightBlueAccent,
+                ),
+                child: Text(
+                  "Add Task",
+                  style: TextStyle(color: Colors.white, fontSize: 25),
+                ),
               ),
             ],
           ),
