@@ -21,8 +21,14 @@ class AddTask extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
               ),
+              SizedBox(
+                height: 15,
+              ),
               TextField(
                   textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 25,
+                  ),
                   decoration: InputDecoration(
                     hintText: "Add a new task",
                     hintStyle: TextStyle(fontSize: 20),
