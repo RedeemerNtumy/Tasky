@@ -22,10 +22,11 @@ class AddTask extends StatelessWidget {
                 ),
               ),
               TextField(
+                  textAlign: TextAlign.center,
                   decoration: InputDecoration(
-                hintText: "Add a new task",
-                hintStyle: TextStyle(fontSize: 20),
-              )),
+                    hintText: "Add a new task",
+                    hintStyle: TextStyle(fontSize: 20),
+                  )),
               SizedBox(
                 height: 15,
               ),
