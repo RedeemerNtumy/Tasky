@@ -18,7 +18,7 @@ class AddTask extends StatelessWidget {
                 style: TextStyle(
                   color: Colors.lightBlueAccent,
                   fontSize: 45,
-                  fontWeight: FontWeight.w500,
+                  fontWeight: FontWeight.w400,
                 ),
               ),
               SizedBox(
@@ -27,6 +27,7 @@ class AddTask extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(right: 40, left: 40),
                 child: TextField(
+                    cursorColor: Colors.lightBlueAccent,
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       fontSize: 25,
@@ -39,7 +40,6 @@ class AddTask extends StatelessWidget {
                       focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(
                               color: Colors.lightBlueAccent, width: 3.0)),
-                      hintText: "Add a new task",
                       hintStyle: TextStyle(fontSize: 20),
                     )),
               ),
@@ -55,7 +55,7 @@ class AddTask extends StatelessWidget {
                     backgroundColor: Colors.lightBlueAccent,
                   ),
                   child: Text(
-                    "Add Task",
+                    "Add",
                     style: TextStyle(color: Colors.white, fontSize: 25),
                   ),
                 ),
