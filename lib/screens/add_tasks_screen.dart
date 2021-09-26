@@ -24,26 +24,40 @@ class AddTask extends StatelessWidget {
               SizedBox(
                 height: 15,
               ),
-              TextField(
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontSize: 25,
-                  ),
-                  decoration: InputDecoration(
-                    hintText: "Add a new task",
-                    hintStyle: TextStyle(fontSize: 20),
-                  )),
+              Padding(
+                padding: EdgeInsets.only(right: 40, left: 40),
+                child: TextField(
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 25,
+                    ),
+                    decoration: InputDecoration(
+                      enabledBorder: UnderlineInputBorder(
+                        borderSide: BorderSide(
+                            color: Colors.lightBlueAccent, width: 2.0),
+                      ),
+                      focusedBorder: UnderlineInputBorder(
+                          borderSide: BorderSide(
+                              color: Colors.lightBlueAccent, width: 3.0)),
+                      hintText: "Add a new task",
+                      hintStyle: TextStyle(fontSize: 20),
+                    )),
+              ),
               SizedBox(
                 height: 15,
               ),
-              TextButton(
-                onPressed: null,
-                style: TextButton.styleFrom(
-                  backgroundColor: Colors.lightBlueAccent,
-                ),
-                child: Text(
-                  "Add Task",
-                  style: TextStyle(color: Colors.white, fontSize: 25),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.only(right: 40, left: 40),
+                child: TextButton(
+                  onPressed: null,
+                  style: TextButton.styleFrom(
+                    backgroundColor: Colors.lightBlueAccent,
+                  ),
+                  child: Text(
+                    "Add Task",
+                    style: TextStyle(color: Colors.white, fontSize: 25),
+                  ),
                 ),
               ),
             ],
