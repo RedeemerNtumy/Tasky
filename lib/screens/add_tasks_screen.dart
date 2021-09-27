@@ -11,13 +11,13 @@ class AddTask extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 30,
+                height: 25,
               ),
               Text(
                 "Add Task",
                 style: TextStyle(
                   color: Colors.lightBlueAccent,
-                  fontSize: 45,
+                  fontSize: 40,
                   fontWeight: FontWeight.w400,
                 ),
               ),
@@ -27,6 +27,7 @@ class AddTask extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(right: 40, left: 40),
                 child: TextField(
+                    autofocus: true,
                     cursorColor: Colors.lightBlueAccent,
                     textAlign: TextAlign.center,
                     style: TextStyle(
@@ -44,7 +45,7 @@ class AddTask extends StatelessWidget {
                     )),
               ),
               SizedBox(
-                height: 15,
+                height: 30,
               ),
               Container(
                 width: double.infinity,
